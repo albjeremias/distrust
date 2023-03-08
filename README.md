@@ -26,19 +26,11 @@ podman run -d \
 
 ### Running using docker-compose
 
-Download a release 
-
-```sh
-export VERSION=0.0.5
-curl https://github.com/Parkour-Vienna/distrust/releases/download/v$VERSION/distrust_$VERSION_Linux_x86_64.tar.gz
-tar zxvf distrust_$VERSION_Linux_x86_64.tar.gz
-```
-
 Build the image: `docker-compose build`
 
 Up and running: `docker-compose up`
 
-Generate a new key: `docker-compose exec distrust ./distrust genkey`
+Generate a new key: `docker-compose exec distrust ./app/distrust genkey`
 
 ## Configuration
 
